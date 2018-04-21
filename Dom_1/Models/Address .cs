@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,6 +20,7 @@ namespace Dom_1.Models
 
         public string City { get; set; }
 
+        [Display(Name = "Zip")]
         public int PostalCode { get; set; }
     }
 }

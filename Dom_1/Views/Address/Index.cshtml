@@ -6,10 +6,72 @@
 <h2>Index</h2>
 
 
-<h3>Id:         @Model.ID</h3>
-<h3>First Name: @Model.FirstName</h3>
-<h3>Last Name:  @Model.LastName</h3>
-<h3>Address1:   @Model.Address1</h3>
-<h3>Address2:   @Model.Address2</h3>
-<h3>City    :   @Model.City</h3>
-<h3>Zip:        @Model.PostalCode</h3> 
+@*<h3>Id:           @Model.ID</h3>
+    <h3>First Name: @Model.FirstName</h3>
+    <h3>Last Name:  @Model.LastName</h3>
+    <h3>Address1:   @Model.Address1</h3>
+    <h3>Address2:   @Model.Address2</h3>
+    <h3>City    :   @Model.City</h3>
+    <h3>Zip:        @Model.PostalCode</h3>*@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PostalCode)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => Model.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.Address2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => Model.PostalCode)
+            </td>
+            @*<td>
+                <a asp-action="Edit" asp-route-id="@Model">Edit</a> |
+                <a asp-action="Details" asp-route-id="@Model">Details</a> |
+                <a asp-action="Delete" asp-route-id="@Model">Delete</a>
+            </td>*@
+        </tr>
+    </tbody>
+</table>
